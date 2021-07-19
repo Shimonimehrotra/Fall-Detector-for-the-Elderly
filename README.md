@@ -1,5 +1,8 @@
 # Fall-Detector-for-the-Elderly
 
+Commonly, fall detection systems use a gyroscope and an accelerometer. A gyroscope is used to determine an orientation and an accelerometer provides the information about the angular parameter as three-axis data. But we also need to decide a threshold so that the system can differentiate between a fall and normal activity. For this purpose of Fall Detection, a 3D-axis accelerometer and Gyroscope (MPU6050) is used with Arduino Uno device wearable is used, which is responsible for collecting data from movements of elderly people in real-time.
+
+
 ## Algorithm
 
 We use the threshold-based detection system and check whether a parameter is above a certain threshold value within a time interval. In a fall situation, there is a large change in acceleration within a split second and then after the fall, the person lies still for some time, showing no change in orientation. Knowing these details allows us to create the algorithm.
